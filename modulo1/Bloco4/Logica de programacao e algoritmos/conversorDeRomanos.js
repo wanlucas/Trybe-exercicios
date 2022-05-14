@@ -18,9 +18,9 @@ function convertNumber([...number]) {
 }
 
 const romano = 'XIV';
-const resultado = convertNumber(romano);
+const result = convertNumber(romano);
 
-console.log(resultado);
+console.log(result);
 
 //a minha função percorre por cada número já convertido e verifica se há algum 
 //número com valor maior à sua direita; caso haja, o atual número é subtraído do valor total
