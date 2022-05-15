@@ -10,3 +10,22 @@ function isPrimeNumber(number) {
 }
 
 console.log(isPrimeNumber(7));
+
+
+// agora o desafio é encontrar o maior número primo entre 2 e um número passado 
+
+let biggerPrimeNumber;
+const limit = 50; 
+
+for(let max = limit; max > 0; max--) {
+  if(biggerPrimeNumber) break;
+
+  for(let number = 2; number < max; number++) {
+    if(max % number == 0) break;
+    if(number == max - 1) biggerPrimeNumber = max;
+  };
+}
+
+console.log(biggerPrimeNumber);
+
+
