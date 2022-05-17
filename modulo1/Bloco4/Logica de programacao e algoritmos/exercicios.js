@@ -1,5 +1,3 @@
-
-
 // O exercício pede que eu crie um algorítmo que retorne uma string invertida.
 
 function invertString(string) {
@@ -26,7 +24,7 @@ function isPrimeNumber(number) {
 
 console.log(isPrimeNumber(9));
 
-// agora o desafio é encontrar o maior número primo entre 2 e um número passado.
+// Agora o desafio é encontrar o maior número primo entre 2 e um número passado.
 
 function biggerPrimeNumber(limit) {
   for(let max = limit; max > 0; max--) {
@@ -41,7 +39,7 @@ function biggerPrimeNumber(limit) {
 
 console.log(biggerPrimeNumber(90));
 
-//o objetivo é criar uma função que receba um número romano e retorne-o convertido.
+// O objetivo é criar uma função que receba um número romano e retorne-o convertido.
 
 function romanNumeralConverter([...number]) {
   const ref = { 
