@@ -11,10 +11,10 @@ const size = 5; // tamanho que servirá para todos os desenhos.
 // *****
 
 for(let line = 0; line < size; line++) {
-  let msg = '';
+  let lineTxt = '';
 
-  for(let col = 0; col < size; col++) msg += '*'; 
-  console.log(msg);
+  for(let col = 0; col < size; col++) lineTxt += '*'; 
+  console.log(lineTxt);
 }
 
 // ____________ // 
@@ -28,10 +28,10 @@ for(let line = 0; line < size; line++) {
 // *****
 
 for(let line = 0; line < size; line++) {
-  let msg = '';
+  let lineTxt = '';
 
-  for(let col = 0; col < line + 1; col++) msg += '*'; 
-  console.log(msg);
+  for(let col = 0; col < line + 1; col++) lineTxt += '*'; 
+  console.log(lineTxt);
 }
 
 // ____________ // 
@@ -45,14 +45,14 @@ for(let line = 0; line < size; line++) {
 // *****
 
 for(let line = 0; line < size; line++) {
-  let msg = '';
+  let lineTxt = '';
 
   for(let col = 0; col < size; col++) {
-    if(col + line >= size - 1) msg += '*'
-    else msg += ' ';
+    if(col + line >= size - 1) lineTxt += '*'
+    else lineTxt += ' ';
   }; 
 
-  console.log(msg);
+  console.log(lineTxt);
 }
 
 // ____________ // 
@@ -66,14 +66,14 @@ for(let line = 0; line < size; line++) {
 const mid = Math.ceil(size / 2);
 
 for(let line = 1; line <= mid; line++) {
-  let msg = '';
+  let lineTxt = '';
 
   for(let col = 1; col <= size; col++) {
-    if(Math.abs(col - mid) < line) msg += '*'
-    else msg += ' ';
+    if(Math.abs(col - mid) < line) lineTxt += '*'
+    else lineTxt += ' ';
   };
 
-  console.log(msg);
+  console.log(lineTxt);
 }
 
 // ____________ // 
@@ -89,13 +89,13 @@ const size2 = size + 2;
 const mid2 = Math.ceil(size2 / 2);
 
 for(let line = 1; line <= mid2; line++) {
-  let msg = '';
+  let lineTxt = '';
 
   for(let col = 1; col <= size2; col++) {
     if(Math.abs(col - mid2) == line - 1 || line == mid2)
-      msg += '*';
-    else msg += ' ';
+      lineTxt += '*';
+    else lineTxt += ' ';
   };
 
-  console.log(msg);
+  console.log(lineTxt);
 }
