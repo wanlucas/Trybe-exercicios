@@ -11,8 +11,7 @@ function isPrimeNumber(number) {
 
 console.log(isPrimeNumber(7));
 
-
-// agora o desafio é encontrar o maior número primo entre 2 e um número passado 
+// agora o desafio é encontrar o maior número primo entre 2 e um número passado. 
 
 let biggerPrimeNumber;
 const limit = 50; 
