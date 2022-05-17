@@ -2,25 +2,25 @@
 
 
 // solução 1
-const number = 10;
-let result = number;
+const factorial = 10;
+let result = factorial;
 
 for(let i = 1 ; i < number ; i++)
   result *= number - i;
 
 console.log(result);
 
-// solucao 2
-let factorial = 10;
-
-for(let num = factorial - 1; num > 1; num--) 
-  factorial *= num;
-
-console.log(factorial);
-
-// solução desnecessariamente concisa
+// solução 2
 let factorial2 = 10;
 
-for(let num = factorial2 - 1; num > 1; factorial2 *= num--);
+for(let num = factorial2 - 1; num > 1; num--) 
+  factorial2 *= num;
 
 console.log(factorial2);
+
+// solução desnecessariamente concisa
+let factorial3 = 10;
+
+for(let num = factorial3 - 1; num > 1; factorial3 *= num--);
+
+console.log(factorial3);
