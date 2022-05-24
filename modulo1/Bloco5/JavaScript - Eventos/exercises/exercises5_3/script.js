@@ -38,6 +38,7 @@ function createButton(name) {
   const button = document.createElement('button');
 
   button.innerText = name;
+  button.id = 'btn-holiday';
   button.addEventListener('click', () => {
     const elements = document.getElementsByClassName('holiday'); 
 
@@ -45,7 +46,6 @@ function createButton(name) {
       element.classList.toggle('selected');
   });
   
-  button.id = 'btn-holiday';
   container.appendChild(button);
 }
 
