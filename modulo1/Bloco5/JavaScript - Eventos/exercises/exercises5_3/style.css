@@ -153,6 +153,10 @@ label {
   background: rgb(209, 125, 125);
 }
 
+.friday { 
+  background: red;
+}
+
 .week-days {
   font-size: 20px;
   margin: 0px;
