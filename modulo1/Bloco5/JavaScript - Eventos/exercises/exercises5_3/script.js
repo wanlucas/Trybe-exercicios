@@ -32,3 +32,21 @@ function createDaysOfTheMonth() {
 }
 
 createDaysOfTheMonth();
+
+function createButton(name) {
+  const container = document.querySelector('.buttons-container');
+  const button = document.createElement('button');
+
+  button.innerText = name;
+  button.addEventListener('click', () => {
+    const elements = document.getElementsByClassName('holiday'); 
+
+    for(const element of elements)
+      element.classList.toggle('selected');
+  });
+  
+  button.id = 'btn-holiday';
+  container.appendChild(button);
+}
+
+createButton('Feriados');

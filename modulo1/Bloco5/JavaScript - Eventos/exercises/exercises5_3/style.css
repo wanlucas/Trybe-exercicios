@@ -148,6 +148,11 @@ label {
   width: 13.6%;
 }
 
+.selected {
+  transition: 0.5s;
+  background: rgb(209, 125, 125);
+}
+
 .week-days {
   font-size: 20px;
   margin: 0px;
