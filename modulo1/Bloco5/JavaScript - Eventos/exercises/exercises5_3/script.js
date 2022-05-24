@@ -10,3 +10,25 @@ function createDaysOfTheWeek() {
     weekDaysList.appendChild(dayListItem);
   };
 };
+
+createDaysOfTheWeek();
+
+function createDaysOfTheMonth() {
+  const daysList = document.getElementById('days');
+  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  const holiDays = [24, 25, 31], fridays = [4, 11, 18, 25];
+
+  for(const day of dezDaysList) {
+    const li = document.createElement('li');
+
+    li.classList.add('day'); 
+    li.innerText = day;
+
+    if(holiDays.includes(day)) li.classList.add('holiday');
+    if(fridays.includes(day)) li.classList.add('friday');
+
+    daysList.appendChild(li);
+  }
+}
+
+createDaysOfTheMonth();
