@@ -84,7 +84,7 @@ function fruitRepetitions(array) {
 
   for(const fruit of array) {
     if(!list[fruit]) list[fruit] = 0;
-
+    
     list[fruit]++;
   }
 
