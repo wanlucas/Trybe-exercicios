@@ -1,4 +1,4 @@
-const { fatorial, MMC, removeItem } = require('./script');
+const { fatorial, MMC, removeItem, searchEmployee } = require('./script');
 
 describe('fatorial function', () => {
   test('if fatorial function exists', () => {
@@ -43,5 +43,19 @@ describe('RemoveItem function', () => {
 
   test('removeItem([1, 2, 3, 4], 5) return [1, 2, 3, 4]', () => {
     expect(removeItem([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+  });
+});
+
+describe('searchEmployee function', () => {
+  test('last name of 4678-2 is Dodds', () => {
+    expect(searchEmployee('4678-2', 'lastName')).toBe('Dodds');
+  });
+  
+  test('id 5678-2 does not exist', () => {
+    expect(searchEmployee('5678-2', '')).toBe('ID não identificada');
+  });
+
+  test('age of id 4456-4 returns error', () => {
+    expect(searchEmployee('4456-4', 'age')).toBe('Informação indisponível');
   });
 });
