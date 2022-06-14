@@ -1,4 +1,4 @@
-const { fatorial, MMC } = require('./script');
+const { fatorial, MMC, removeItem } = require('./script');
 
 describe('fatorial function', () => {
   test('if fatorial function exists', () => {
@@ -29,5 +29,19 @@ describe('MMC function', () => {
 
   test('if MMC of 123, 34, 234 and 23 is 3751254', () => {
     expect(MMC([123, 34, 234, 23])).toBe(3751254); 
+  });
+});
+
+describe('RemoveItem function', () => {
+  test('removeItem([1, 2, 3, 4], 3) returns [1, 2, 4]', () => {
+    expect(removeItem([1, 2, 3, 4], 3)).toEqual([1, 2, 4]);
+  });
+
+  test('removeItem([1, 2, 3, 4], 3) does not return [1, 2, 3, 4]', () => {
+    expect(removeItem([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4]);
+  });
+
+  test('removeItem([1, 2, 3, 4], 5) return [1, 2, 3, 4]', () => {
+    expect(removeItem([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
 });

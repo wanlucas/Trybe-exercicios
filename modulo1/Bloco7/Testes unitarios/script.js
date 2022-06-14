@@ -19,4 +19,14 @@ const MMC = (numbers) => {
   return dividers.reduce((a, b) => a * b);
 }
 
-module.exports = { fatorial, MMC };
+const removeItem = (arr, itemName) => {
+  const newArr = [];
+
+  for(const item of arr) {
+    if (item !== itemName) newArr.push(item);
+  }
+
+  return newArr;
+}
+
+module.exports = { fatorial, MMC, removeItem };
