@@ -42,7 +42,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _[Projeto - Meme Generator]()_
-- [x] 5-6: _[Projeto - Arte com Pixels]()_
+- [x] 5-6: _[Projeto - Arte com Pixels](https://www.linkedin.com/posts/wan-lucas-926659238_terceiro-projeto-da-trybe-conclu%C3%ADdo-o-objetivo-activity-6935650452910792704-JGlk?utm_source=linkedin_share&utm_medium=member_desktop_web)_
 - [x] 5-7: _[Projeto - Lista de tarefas]()_
 - [x] 5-7: _[Projeto - Carta Misteriosa]()_
 - [x] 5-7: _[Projeto - Adivinhe a Cor]()_
@@ -54,7 +54,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [x] 6-6: _[Projeto - Trybewarts]()_
+- [x] 6-6: _[Projeto - Trybewarts](https://www.linkedin.com/posts/wan-lucas-926659238_mais-um-projeto-da-trybe-finalizado-o-objetivo-activity-6942204566637551617-CyZm?utm_source=linkedin_share&utm_medium=member_desktop_web)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
